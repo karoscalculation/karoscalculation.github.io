@@ -1,31 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Index</title>
-</head>
-<body>
-<ul>
-    <li>Home</li>
-</ul>
-<h1>Homepage</h1>
-<form>
-  <fieldset>
-    <legend>Fruit juice size</legend>
-    <p>
-      <input type="radio" name="size" id="size_1" value="small">
-      <label for="size_1">Small</label>
-    </p>
-    <p>Hola)</p>
-    <p>
-      <input type="radio" name="size" id="size_2" value="medium">
-      <label for="size_2">Medium</label>
-    </p>
-    <p>
-      <input type="radio" name="size" id="size_3" value="large">
-      <label for="size_3">Large</label>
-    </p>
-  </fieldset>
-</form>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/css/css.css" type="text/css">
+    <title>Number guessing game</title>
+  </head>
+
+  <body>
+    <h1>Number guessing game</h1>
+
+    <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+    <div class="form">
+      <label for="guessField">.........................Урон</label>
+      <label for="guessField">.............................Атака в %</label>
+      <label for="guessField">...............................Крит</label>
+    </div>
+    <div class="form">
+      <label for="guessField">Оружие</label>
+      <input type="number" min="0" value="0">
+      <input type="number" min="0" value="0" >
+      <input type="number" min="0" value="0" step="0.01">
+    </div>
+    <hr>
+    <div class="form">
+      <label for="guessField">Сет</label>
+      <input type="number" min="0" value="0">
+      <input type="number" min="0" value="0">
+      <input type="number" min="0" value="0"step="0.01">
+    </div>
+    <hr>
+    <div class="form">
+      <label for="guessField">Крылья</label>
+      <input type="number" min="0" value="0">
+      <input type="number" min="0" value="0">
+      <input type="number" min="0" value="0"step="0.01">
+    </div>
+    <hr>
+    <div class="form">
+      <label for="guessField">Бижутерия</label>
+      <input type="number" min="0" value="0">
+      <input type="number" min="0" value="0">
+      <input type="number" min="0" value="0"step="0.01">
+    </div>
+    <hr>
+    <div class="form">
+      <label for="guessField">Ава пухи</label>
+      <input type="number" min="0" max="30" value="0">
+      <input type="number" min="0" max="5" value="0">
+    </div>
+    <hr>
+    <div class="form">
+      <label for="guessField">Вечка(+Камни)</label>
+      <input type="number" min="0" value="0">
+      <input type="number" min="0" value="0">
+    </div>
+    <hr>
+    <div class="form">
+      <label for="guessField">Ава Крыльев</label>
+      <input type="number" min="0" value="0">
+    </div>
+    <hr>
+    <div class="form">
+      <label for="guessField">Базовый урон</label>
+      <input type="number" min="0" value="0">
+    </div>
+    <hr>
+    <div class="form">
+      <label for="guessField">Кот</label>
+      <input type="number" min="0" value="0">
+    </div>
+    <hr>
+    <div class="form">
+      <label for="guessField">Доп..</label>
+      <input type="number" min="0" value="0">
+      <input type="number" min="0" value="0" >
+      <input type="number" min="0" value="0" step="0.01">
+    </div>
+    <hr>
+    <div class="form">
+      <label for="guessField">.........................Урон</label>
+      <label for="guessField">.............................ПК Урон</label>
+      <label for="guessField">...............................Крит</label>
+    </div>
+    <div class="form">
+      <label for="guessField">ПК Оружие</label>
+      <input type="number" min="0" value="0" id="guessField" class="guessField">
+      <input type="number" min="0" value="0" >
+      <input type="number" min="0" value="0" step="0.01">
+      <input type="submit" value="Submit guess" class="guessSubmit">
+    </div>
+    <hr>
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+    <script src="styles/js/js.js"></script>
+  </body>
 </html>
